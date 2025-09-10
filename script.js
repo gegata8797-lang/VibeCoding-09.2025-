@@ -16,16 +16,6 @@ class CreditCalculator {
             e.preventDefault();
             this.calculateCredit();
         });
-        
-        // Добавяме real-time изчисления при промяна на стойностите
-        const inputs = this.form.querySelectorAll('input');
-        inputs.forEach(input => {
-            input.addEventListener('input', () => {
-                if (this.isFormValid()) {
-                    this.calculateCredit();
-                }
-            });
-        });
     }
     
     isFormValid() {

@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -20,16 +20,17 @@ body {
 }
 
 .calculator-card {
-    background: white;
+    background: #2d3748;
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
+    border: 1px solid #4a5568;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 30px;
     font-size: 2rem;
     font-weight: 600;
@@ -46,7 +47,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #555;
+    color: #cbd5e0;
     font-weight: 500;
     font-size: 0.95rem;
 }
@@ -54,28 +55,29 @@ label {
 input {
     width: 100%;
     padding: 15px;
-    border: 2px solid #e1e5e9;
+    border: 2px solid #4a5568;
     border-radius: 12px;
     font-size: 1rem;
     transition: all 0.3s ease;
-    background: #f8f9fa;
+    background: #1a202c;
+    color: #e2e8f0;
 }
 
 input:focus {
     outline: none;
-    border-color: #667eea;
-    background: white;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #4299e1;
+    background: #2d3748;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
 }
 
 input:hover {
-    border-color: #c1c7d0;
+    border-color: #718096;
 }
 
 .calculate-btn {
     width: 100%;
     padding: 16px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
     color: white;
     border: none;
     border-radius: 12px;
@@ -89,7 +91,7 @@ input:hover {
 
 .calculate-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 25px rgba(66, 153, 225, 0.4);
 }
 
 .calculate-btn:active {
@@ -97,7 +99,7 @@ input:hover {
 }
 
 .results {
-    border-top: 2px solid #f0f0f0;
+    border-top: 2px solid #4a5568;
     padding-top: 30px;
     animation: fadeIn 0.5s ease-in;
 }
@@ -107,7 +109,7 @@ input:hover {
 }
 
 .results h2 {
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 20px;
     font-size: 1.5rem;
     text-align: center;
@@ -118,7 +120,7 @@ input:hover {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #4a5568;
 }
 
 .result-item:last-child {
@@ -126,12 +128,12 @@ input:hover {
 }
 
 .label {
-    color: #666;
+    color: #a0aec0;
     font-weight: 500;
 }
 
 .value {
-    color: #333;
+    color: #e2e8f0;
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -139,12 +141,13 @@ input:hover {
 .payment-breakdown {
     margin-top: 30px;
     padding: 20px;
-    background: #f8f9fa;
+    background: #1a202c;
     border-radius: 12px;
+    border: 1px solid #4a5568;
 }
 
 .payment-breakdown h3 {
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 20px;
     text-align: center;
     font-size: 1.2rem;
@@ -178,7 +181,7 @@ input:hover {
 }
 
 .chart-label {
-    color: #666;
+    color: #a0aec0;
     font-weight: 500;
     font-size: 0.9rem;
 }
