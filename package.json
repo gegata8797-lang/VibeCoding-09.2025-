@@ -1,0 +1,13 @@
+{
+  "name": "credit-calculator",
+  "version": "1.0.0",
+  "description": "Bulgarian Credit Calculator",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000"
+  },
+  "keywords": ["calculator", "credit", "bulgarian"],
+  "author": "",
+  "license": "MIT"
+}
