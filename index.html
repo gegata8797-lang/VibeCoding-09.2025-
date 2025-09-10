@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредитен калкулатор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <h1>Кредитен калкулатор</h1>
+            
+            <form id="creditForm" class="calculator-form">
+                <div class="input-group">
+                    <label for="amount">Сума на кредита (лв.)</label>
+                    <input type="number" id="amount" min="1000" max="1000000" step="100" placeholder="10000" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="interest">Годишен лихвен процент (%)</label>
+                    <input type="number" id="interest" min="0.1" max="30" step="0.1" placeholder="5.5" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="months">Срок в месеци</label>
+                    <input type="number" id="months" min="6" max="360" step="1" placeholder="60" required>
+                </div>
+                
+                <button type="submit" class="calculate-btn">Изчисли</button>
+            </form>
+            
+            <div id="results" class="results hidden">
+                <h2>Резултати</h2>
+                <div class="result-item">
+                    <span class="label">Месечна вноска:</span>
+                    <span id="monthlyPayment" class="value"></span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Обща сума за плащане:</span>
+                    <span id="totalAmount" class="value"></span>
+                </div>
+                <div class="result-item">
+                    <span class="label">Общо лихви:</span>
+                    <span id="totalInterest" class="value"></span>
+                </div>
+                
+                <div class="payment-breakdown">
+                    <h3>Разбивка на плащанията</h3>
+                    <div class="breakdown-chart">
+                        <div class="chart-item principal">
+                            <div class="chart-bar" id="principalBar"></div>
+                            <span class="chart-label">Главница</span>
+                        </div>
+                        <div class="chart-item interest">
+                            <div class="chart-bar" id="interestBar"></div>
+                            <span class="chart-label">Лихви</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
